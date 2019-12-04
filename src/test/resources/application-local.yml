@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    show-sql: false
+    properties:
+      hibernate.dialect: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+#  cache:
+#    custom:
+#      redis:
+#        enable: false
+
+logging:
+  config: classpath:log4j2-spring-local.xml
+  level:
+    org.springframework.ws.client: trace
+    ae.damanone: debug
